@@ -9,13 +9,13 @@ To set up the project, follow these steps:
 1. Clone the repository:
 
    ```sh
-   git clone <repository-url>
+   git clone https://github.com/Mitesh-Amin01/Basic-React-App.git
    ```
 
 2. Navigate to the project directory:
 
    ```sh
-   cd project-directory
+   cd React-Basic
    ```
 
 3. Install dependencies:
@@ -29,7 +29,7 @@ To set up the project, follow these steps:
 To start the development server, run:
 
 ```sh
-npm start
+npm run start
 ```
 
 The app will be available at `http://localhost:3000/`.
@@ -39,8 +39,7 @@ The app will be available at `http://localhost:3000/`.
 ```
 my-app/
 │-- src/
-│   │-- components/
-│   │   │-- MyComponent.js
+│   │-- home.js
 │   │-- App.js
 │   │-- index.js
 │-- public/
@@ -53,13 +52,15 @@ my-app/
 A basic React component example:
 
 ```jsx
-import React from 'react';
+import React from 'react'
 
-function MyComponent() {
-  return <h1>Hello, React!</h1>;
+export default function home() {
+  return (
+    <>
+    <h1>Mitesh Amin</h1>
+    </>
+  )
 }
-
-export default MyComponent;
 ```
 
 ## Importing a Component
@@ -67,14 +68,15 @@ export default MyComponent;
 To use `MyComponent` inside `App.js`:
 
 ```jsx
-import React from 'react';
-import MyComponent from './components/MyComponent';
-
+import Home from './home'
 function App() {
   return (
-    <div>
-      <MyComponent />
-    </div>
+    <>
+      <div style={{width: "100%", height: "100vh", justifyContent: "center", alignItems: "center", display: 'flex', flexDirection: 'column'}}>
+        <h1>Hello I Am Back</h1>
+        <Home />
+      </div>
+    </>
   );
 }
 
@@ -83,4 +85,4 @@ export default App;
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the Mitesh Amin License.
